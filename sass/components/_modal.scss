@@ -1,0 +1,66 @@
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    transition: opacity 250ms, visibility 250ms;
+}
+
+.backdrop.is-hidden {
+    visibility: hidden;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 250ms var(--time-function);
+}
+
+.backdrop.is-hidden .modal {
+    transform: translate(-50%, -50%) scale(1.5);
+    transition: transform 250ms var(--time-function);
+}
+
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 528px;
+    height: 581px;
+    border-radius: 4px;
+
+    background: var(--other-text-color);
+    box-shadow:
+        0px 1px 3px rgba(0, 0, 0, 0.12),
+        0px 1px 1px rgba(0, 0, 0, 0.14),
+        0px 2px 1px rgba(0, 0, 0, 0.2);
+
+    transform: translate(-50%, -50%) scale(1);
+    transition: transform 250ms var(--time-function);
+    overflow: auto;
+}
+
+.modal__button {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    width: 30px;
+    height: 30px;
+
+    fill: var(--title-text-color);
+    background: var(--other-text-color);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: transform 250ms var(--time-function),
+        fill 250ms var(--time-function);
+    &:hover {
+            fill: var(--accent-color);
+        }
+}
+
+.modal__svg {
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
