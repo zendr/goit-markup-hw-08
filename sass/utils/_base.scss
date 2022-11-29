@@ -49,9 +49,15 @@ li {
 }
 .section {
     width: 100%;
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    @media screen and (min-width:1200px) {
     padding-top: 94px;
     padding-bottom: 94px;
+    }
 }
+
 
 .visually-hidden {
     position: absolute;
@@ -70,4 +76,12 @@ img {
     display: block;
     max-width: 100%;
     height: auto;
+}
+
+%list {
+    list-style: none;
+}
+
+%link {
+    text-decoration: none;
 }
