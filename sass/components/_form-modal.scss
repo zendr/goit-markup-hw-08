@@ -7,13 +7,10 @@
     text-align: center;
     letter-spacing: 0.03em;
     color: #212121;
-    margin-top: 40px;
 }
 
-.contact__form {
-    margin: 2px 40px 30px 40px;
 
-}
+
 
 .form__label {
     display: block;
@@ -74,11 +71,14 @@
 .form__link:visited,
 .form__link:link {
     font-weight: 400;
-    font-size: 14px;
+    font-size: 12px;
     line-height: 24px;
     color: var(--accent-color);
     cursor: pointer;
     text-decoration: underline;
+    @media screen and (min-width: 1200px) {
+            font-size: 14px;
+        }
 }
 
 .form__button {

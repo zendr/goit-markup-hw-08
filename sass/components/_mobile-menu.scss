@@ -86,7 +86,7 @@
     width: 100%;
     margin-bottom: 32px;
 
-    color: var(--main-font-color);
+    color: var(--primary-text-color);
     font-weight: 500;
     font-size: 22px;
     line-height: calc(26/22);
@@ -105,7 +105,7 @@
 
 .mobile-menu__contact-mail {
     @extend %link;
-    color: var(--main-font-color);
+    color: var(--primary-text-color);
     font-weight: 500;
     font-size: 22px;
     line-height: calc(26/22);
