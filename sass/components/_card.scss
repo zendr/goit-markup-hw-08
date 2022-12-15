@@ -61,6 +61,7 @@ margin-bottom: 30px;
 
 .card__link {
     display: inline-block;
+    border: 1px solid #EEEEEE;
     transition: background-color 250ms var(--time-function),
     color 250ms var(--time-function),
     box-shadow 250ms var(--time-function);

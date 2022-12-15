@@ -243,6 +243,7 @@ img {
 
 .card__link {
   display: inline-block;
+  border: 1px solid #EEEEEE;
   -webkit-transition: background-color 250ms var(--time-function), color 250ms var(--time-function), -webkit-box-shadow 250ms var(--time-function);
   transition: background-color 250ms var(--time-function), color 250ms var(--time-function), -webkit-box-shadow 250ms var(--time-function);
   transition: background-color 250ms var(--time-function), color 250ms var(--time-function), box-shadow 250ms var(--time-function);
@@ -351,6 +352,7 @@ img {
   padding-bottom: 32px;
   color: var(--secondory-font-color);
   font-weight: 500;
+  font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   -webkit-transition: color 250ms var(--time-function);
